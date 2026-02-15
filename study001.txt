@@ -1,5 +1,8 @@
-pwd [cek lokasi]
-git status [cek status]
-git add [nambah file/habis ubah file]
-git commit -m "untuk keterangan commit"
-git push origin [nama branch]
+pwd #cek posisi
+git status # cek status git
+git add [nama file] # nambah/habis ubah file
+git commit -m "untuk keterangan commit" # untuk perintah commit
+git push origin [nama branch] #untuk upload ke github
+git branch [nama branch] #untuk buat branch baru
+git checkout [nama branch yg mau dipindah] # untuk pindah branch
+git branch # untuk melihat banyaknya branch
