@@ -1,2 +1,5 @@
 pwd [cek lokasi]
 git status [cek status]
+git add [nambah file/habis ubah file]
+git commit -m "untuk keterangan commit"
+git push origin [nama branch]
