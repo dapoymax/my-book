@@ -7,3 +7,4 @@ git branch [nama branch] #untuk buat branch baru
 git checkout [nama branch yg mau dipindah] # untuk pindah branch
 git branch # untuk melihat banyaknya branch
 git checkout -b [nama branch baru] # untuk copy dari branch asal ke branch baru
+git merge [nama branch] untuk copy dari branch asal ke branch sekarang
