@@ -1,0 +1,14 @@
+# Gunakan image resmi PostgreSQL sebagai dasar
+FROM postgres:16
+
+# (Opsional) Set variabel lingkungan langsung di Dockerfile
+ENV POSTGRES_USER=myuser
+ENV POSTGRES_PASSWORD=mypassword
+ENV POSTGRES_DB=mydatabase
+
+# (Opsional) Salin skrip .sql untuk inisialisasi tabel/data saat pertama kali dijalankan
+# File init.sql harus ada di folder yang sama
+#COPY init.sql /docker-entrypoint-initdb.d/
+
+# Port standar PostgreSQL
+EXPOSE 5432

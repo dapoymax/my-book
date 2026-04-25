@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db-postgree:
+    build:
+      context: .
+      dockerfile: Dockerfile.postgree
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    # TAMBAHKAN INI:
+    networks:
+      - postgree-network
+    command: postgres
+
+volumes:
+  postgres_data:
+
+
+networks:
+  postgree-network:
+    external: false # Opsional, bridge adalah default
