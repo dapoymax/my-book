@@ -26,3 +26,8 @@ volumes:
 networks:
   postgree-network:
     external: false # Opsional, bridge adalah default
+
+
+#catatan ini adalah cara menjalankan docker compose
+
+# docker compose -f docker-compose.postgree.yml up Build
